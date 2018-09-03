@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的第一篇博客">
+<meta property="og:url" content="http://yoursite.com/2018/09/04/我的第一篇博客/index.html">
+<meta property="og:site_name" content="荣归故里">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;n">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-03T16:52:38.582Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的第一篇博客">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;n">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/09/04/我的第一篇博客/"/>
+
+
+
+
+
+  <title>我的第一篇博客 | 荣归故里</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">荣归故里</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">他乡没有烈酒，没有问候</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/04/我的第一篇博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="安子晗">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="荣归故里">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">我的第一篇博客</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-04T00:22:17+08:00">
+                2018-09-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h5 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。</h5><h5 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-到今天，自己也快是入职两个月了吧，说实话，感觉自己提升并不是很大，总归来说，还是自己平常太懒，写完需求以后就不去review代码了，然后回到家之后自己也不去再继续学习练习。慢慢的两个月下来发现自己比找工作的时候还差，所以不免担心自己之后的发展，再加上听闻绩效考核，所以自己应该去抓紧提升自己了，完成从学校人到社会人的转变。"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-到今天，自己也快是入职两个月了吧，说实话，感觉自己提升并不是很大，总归来说，还是自己平常太懒，写完需求以后就不去review代码了，然后回到家之后自己也不去再继续学习练习。慢慢的两个月下来发现自己比找工作的时候还差，所以不免担心自己之后的发展，再加上听闻绩效考核，所以自己应该去抓紧提升自己了，完成从学校人到社会人的转变。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到今天，自己也快是入职两个月了吧，说实话，感觉自己提升并不是很大，总归来说，还是自己平常太懒，写完需求以后就不去review代码了，然后回到家之后自己也不去再继续学习练习。慢慢的两个月下来发现自己比找工作的时候还差，所以不免担心自己之后的发展，再加上听闻绩效考核，所以自己应该去抓紧提升自己了，完成从学校人到社会人的转变。"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到今天，自己也快是入职两个月了吧，说实话，感觉自己提升并不是很大，总归来说，还是自己平常太懒，写完需求以后就不去review代码了，然后回到家之后自己也不去再继续学习练习。慢慢的两个月下来发现自己比找工作的时候还差，所以不免担心自己之后的发展，再加上听闻绩效考核，所以自己应该去抓紧提升自己了，完成从学校人到社会人的转变。</h5><h5 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-自己今后也要学习大神在博客上更新一些技术文章，一些自己的代码review，一些知识点，也有一些生活感悟吧！当然，刚开始的技术深度不会那么深…（毕竟我是连vue都不会的小菜鸟）。以后也打算逐步把个人博客、微信公众号、掘金简书做起来，大概花费两年时间吧。当然这些也都是伴随自己的技术成长，越来越完善，深度也会越来越深。"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-自己今后也要学习大神在博客上更新一些技术文章，一些自己的代码review，一些知识点，也有一些生活感悟吧！当然，刚开始的技术深度不会那么深…（毕竟我是连vue都不会的小菜鸟）。以后也打算逐步把个人博客、微信公众号、掘金简书做起来，大概花费两年时间吧。当然这些也都是伴随自己的技术成长，越来越完善，深度也会越来越深。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自己今后也要学习大神在博客上更新一些技术文章，一些自己的代码review，一些知识点，也有一些生活感悟吧！当然，刚开始的技术深度不会那么深…（毕竟我是连vue都不会的小菜鸟）。以后也打算逐步把个人博客、微信公众号、掘金简书做起来，大概花费两年时间吧。当然这些也都是伴随自己的技术成长，越来越完善，深度也会越来越深。"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自己今后也要学习大神在博客上更新一些技术文章，一些自己的代码review，一些知识点，也有一些生活感悟吧！当然，刚开始的技术深度不会那么深…（毕竟我是连vue都不会的小菜鸟）。以后也打算逐步把个人博客、微信公众号、掘金简书做起来，大概花费两年时间吧。当然这些也都是伴随自己的技术成长，越来越完善，深度也会越来越深。</h5><hr>
+<h3 id="自己也更希望，这是对自己在他乡学习和生活的一个完整记录！！！"><a href="#自己也更希望，这是对自己在他乡学习和生活的一个完整记录！！！" class="headerlink" title="自己也更希望，这是对自己在他乡学习和生活的一个完整记录！！！"></a>自己也更希望，这是对自己在他乡学习和生活的一个完整记录！！！</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">安子晗</p>
+              <p class="site-description motion-element" itemprop="description">西安人漂泊在北京，渴望有一天能荣归故里。（渴望急速成长前端小白）</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。"><span class="nav-number">1.</span> <span class="nav-text">        呃…这是我的第一篇博客，怎么说呢，干了这么长时间的前端，今天终于是搞了自己的博客，可能是自己之前太懒了吧，啥都不想干，所以也一直没有去做。在今年（二零一八年）七月十一号入职公司之后，发现自己迫切需要快速成长，之前自己在学校老是不学习，可能也是没压力吧。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-到今天，自己也快是入职两个月了吧，说实话，感觉自己提升并不是很大，总归来说，还是自己平常太懒，写完需求以后就不去review代码了，然后回到家之后自己也不去再继续学习练习。慢慢的两个月下来发现自己比找工作的时候还差，所以不免担心自己之后的发展，再加上听闻绩效考核，所以自己应该去抓紧提升自己了，完成从学校人到社会人的转变。"><span class="nav-number">2.</span> <span class="nav-text">        到今天，自己也快是入职两个月了吧，说实话，感觉自己提升并不是很大，总归来说，还是自己平常太懒，写完需求以后就不去review代码了，然后回到家之后自己也不去再继续学习练习。慢慢的两个月下来发现自己比找工作的时候还差，所以不免担心自己之后的发展，再加上听闻绩效考核，所以自己应该去抓紧提升自己了，完成从学校人到社会人的转变。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-自己今后也要学习大神在博客上更新一些技术文章，一些自己的代码review，一些知识点，也有一些生活感悟吧！当然，刚开始的技术深度不会那么深…（毕竟我是连vue都不会的小菜鸟）。以后也打算逐步把个人博客、微信公众号、掘金简书做起来，大概花费两年时间吧。当然这些也都是伴随自己的技术成长，越来越完善，深度也会越来越深。"><span class="nav-number">3.</span> <span class="nav-text">        自己今后也要学习大神在博客上更新一些技术文章，一些自己的代码review，一些知识点，也有一些生活感悟吧！当然，刚开始的技术深度不会那么深…（毕竟我是连vue都不会的小菜鸟）。以后也打算逐步把个人博客、微信公众号、掘金简书做起来，大概花费两年时间吧。当然这些也都是伴随自己的技术成长，越来越完善，深度也会越来越深。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自己也更希望，这是对自己在他乡学习和生活的一个完整记录！！！"><span class="nav-number"></span> <span class="nav-text">自己也更希望，这是对自己在他乡学习和生活的一个完整记录！！！</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">安子晗</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
